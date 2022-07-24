@@ -96,6 +96,7 @@ public class Project01StartingFiles {
         String maxTicker = maxArr[6];
         String minTicker = minArr[6];
         
+        //Reading the file
         while (inputFile2.hasNext()) 
         {
             String[] string1 = inputFile2.nextLine().split(",");
@@ -137,6 +138,7 @@ public class Project01StartingFiles {
         //Printing Average Volumes to Screen
         findandPrintAverageToFile(numStocks, totalVol, pw);
         
+        //Closing PrintWriter
         pw.close();
     
      }
